@@ -46,6 +46,18 @@ main > section.active {
   display: flex;
   flex-direction: column;
 }
+#sidebar .toggle-sidebar {
+  background: black;
+  position: absolute;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -45px;
+  display: none;
+}
 #sidebar .logo {
   height: 20%;
   padding-top: 62px;
@@ -94,14 +106,17 @@ main > section.active {
   transform: translate(-50%, -50%) scale(1);
 }
 #sidebar nav ul li a.active i {
-  color: #sidebar nav ul li a.active i primary;
+  color: #658df2;
+}
+#sidebar nav ul li a span {
+  display: none;
 }
 #sidebar nav ul li a i {
   font-size: 18px;
   color: #b6b7ba;
   transition: all 0.3s;
 }
-#sidebar nav ul li span {
+#sidebar nav ul li > span {
   position: absolute;
   white-space: nowrap;
   top: -8px;
@@ -145,12 +160,41 @@ main > section.active {
   left: 3px;
 }
 
-#home {
-  background: red;
+#mini-img {
+  height: 40px;
+  width: 40px;
 }
 
 @media only screen and (max-width: 768px) {
+  #sidebar {
+    background: black;
+    padding-right: 60px;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+  #sidebar.open {
+    transform: translateX(0);
+  }
+  #sidebar .toggle-sidebar {
+    display: flex;
+  }
+  #sidebar .logo {
+    text-align: left;
+  }
+  #sidebar nav ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  #sidebar nav ul li a span {
+    display: block;
+    padding-left: 8px;
+  }
   #sidebar nav ul li > span {
     display: none;
+  }
+  main {
+    padding-left: 0;
+    padding-top: 50px;
   }
 }/*# sourceMappingURL=main.css.map */
