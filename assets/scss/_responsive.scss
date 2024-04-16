@@ -1,0 +1,12 @@
+@media only screen and (max-width: 768px) {
+  #sidebar {
+    nav ul li {
+      a {
+      }
+
+      > span {
+        display: none;
+      }
+    }
+  }
+}

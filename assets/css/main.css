@@ -147,4 +147,10 @@ main > section.active {
 
 #home {
   background: red;
+}
+
+@media only screen and (max-width: 768px) {
+  #sidebar nav ul li > span {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
