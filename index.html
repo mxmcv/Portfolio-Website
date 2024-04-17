@@ -2,19 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio-website</title>
+    <title>Portfolio Website</title>
     <link
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
@@ -22,46 +22,49 @@
       <div class="toggle-sidebar">
         <i class="las la-bars"></i>
       </div>
-      <div class="logo">
-        <img src="assets/images/logo.png" alt="" />
-      </div>
+      <div class="logo"><img src="assets/images/laptop.png" alt="" /></div>
       <nav>
         <ul>
           <li>
-            <a href="#home" class="active"
-              ><i class="las la-home"></i> <span>Home</span></a
-            >
+            <a href="#home" class="active">
+              <i class="las la-home"></i>
+              <span>Home</span>
+            </a>
             <span>Home</span>
           </li>
           <li>
-            <a href="#about_me"
-              ><i class="las la-address-card"></i> <span>About Me</span></a
-            >
+            <a href="#about_me">
+              <i class="las la-address-card"></i>
+              <span>About Me</span>
+            </a>
             <span>About Me</span>
           </li>
-
           <li>
-            <a href="#my_resume"
-              ><i class="las la-file"></i><span>My Resume</span></a
-            >
+            <a href="#my_resume">
+              <i class="las la-file"></i>
+              <span>My Resume</span>
+            </a>
             <span>My Resume</span>
           </li>
           <li>
-            <a href="#my_work"
-              ><i class="las la-briefcase"></i> <span>My Work</span></a
-            >
+            <a href="#my_work">
+              <i class="las la-briefcase"></i>
+              <span>My Work</span>
+            </a>
             <span>My Work</span>
           </li>
           <li>
-            <a href="#testimonial"
-              ><i class="las la-comment-alt"></i> <span>Testimonial</span></a
-            >
+            <a href="#testimonial">
+              <i class="las la-comment-alt"></i>
+              <span>Testimonial</span>
+            </a>
             <span>Testimonial</span>
           </li>
           <li>
-            <a href="#contact_me"
-              ><i class="las la-phone"></i> <span>Contact Me</span></a
-            >
+            <a href="#contact_me">
+              <i class="las la-phone"></i>
+              <span>Contact Me</span>
+            </a>
             <span>Contact Me</span>
           </li>
         </ul>
@@ -74,24 +77,20 @@
     </div>
     <main>
       <section id="home" class="active">
+        <div class="meteor-shower"></div>
         <div class="container">
           <div class="row">
             <div class="col-lg-6 info">
-              <img
-                class="mini-img"
-                src="assets/images/mini-img.png"
-                alt="mini image"
-              />
-              <h1><span>I'm</span> Michael,</h1>
-              <h2 class="field">Front-End web developer</h2>
+              <img class="kiss" src="assets/images/kiss.png" alt="kiss" />
+              <h1><span>I’m</span> Michael,</h1>
+              <div class="field">
+                <h2></h2>
+              </div>
               <p>
                 I design and develop for customers of all sizes, specializing in
-                creating stylish applications with smooth user experiences
+                creating stylish websites and intuitive user experiences.
               </p>
-              <a
-                class="btn-custom-blue"
-                href="assets/files/Michael McVicar 1A Resume-3.pdf"
-                download
+              <a class="btn-custom-blue" href="assets/files/cv.pdf" download
                 >Download CV</a
               >
               <div class="socials">
@@ -99,42 +98,36 @@
                   <li>
                     <a
                       href="https://www.linkedin.com/in/michael-mcvicar-395136291/"
-                      ><i class="lab la-linkedin-in"></i>
-                      <span>LinkedIn</span>
+                    >
+                      <i class="lab la-linkedin-in"></i>
+                      <span>Linkedin</span>
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/mxmcv"
-                      ><i class="lab la-github"></i>
-                      <span>GitHub</span>
+                    <a href="https://github.com/mxmcv">
+                      <i class="lab la-github"></i>
+                      <span>Github</span>
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-6 image">
-              <img
-                class="home-img"
-                src="assets/images/home-img.jpeg"
-                alt="home image"
-              />
-            </div>
           </div>
         </div>
       </section>
-      <section id="about_me"></section>
-      <section id="my_resume"></section>
-      <section id="my_work"></section>
-      <section id="testimonial"></section>
-      <section id="contact_me"></section>
+      <section id="about_me">About</section>
+      <section id="my_resume">Resume</section>
+      <section id="my_work">Work</section>
+      <section id="testimonial">Testimonial</section>
+      <section id="contact_me">Contact</section>
     </main>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

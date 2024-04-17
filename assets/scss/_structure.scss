@@ -1,11 +1,13 @@
 main {
-  padding-left: 102px;
+    padding-left: 102px;
 
-  > section {
-    display: none;
+    > section {
+        display: none;
+        padding-right: 114px;
+        padding-left: 114px;
 
-    &.active {
-      display: block;
+        &.active {
+            display: block;
+        }
     }
-  }
 }

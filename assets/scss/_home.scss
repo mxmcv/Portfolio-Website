@@ -1,27 +1,43 @@
 #home {
+  background-image: url('../images/bg-shape.png');
+  background-repeat: no-repeat;
+  background-position: 40vw -24px;
+
   .info {
     padding-top: 281px;
 
-    img.mini-img {
+    img.kiss {
       margin-bottom: 24px;
-      height: 50px;
-      width: 50px;
+      width: 148px;
+      height: 148px;
     }
 
     h1 {
       margin-bottom: 24px;
+
       span {
         color: $gray;
       }
     }
 
-    h2 {
+    .field {
+      display: flex;
+      align-items: center;
       margin-bottom: 16px;
-      color: $gray;
+
+      h2 {
+        color: $gray;
+        margin: 0;
+      }
+
+      span {
+        font-size: 21px;
+        margin-left: 2px;
+      }
     }
 
     p {
-      max-width: 400px;
+      max-width: 430px;
       margin-bottom: 74px;
     }
 
@@ -30,6 +46,7 @@
 
       ul {
         display: flex;
+        flex-wrap: wrap;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -50,7 +67,7 @@
 
               span,
               i {
-                color: white;
+                color: #fff;
               }
             }
 
@@ -62,7 +79,7 @@
             }
 
             span {
-              color: $secondary-gray;
+              color: $secondary_gray;
               transition: all 0.3s;
             }
           }
@@ -71,21 +88,39 @@
     }
   }
 
-  .image {
+  .meteor-shower {
+    position: absolute;
+    width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
 
-    img {
-      height: 853px;
-      width: 546px;
-      border-radius: 8px;
-      transition: all 0.3s;
-
-      &:hover {
-        filter: saturate(200%) sepia(1);
+    @for $i from 1 through 15 {
+      .meteor:nth-child(#{$i}) {
+        position: absolute;
+        background-image: url('../images/meteor.png');
+        width: 60px;
+        height: 49px;
+        opacity: 0;
+        top: #{random(80) + 'vh'};
+        left: #{random(80) + 'vw'};
+        animation: meteor #{random(5000) + 3000 + 'ms'} linear infinite;
+        animation-delay: #{random(5000) + 'ms'};
       }
     }
+  }
+}
+
+@keyframes meteor {
+  0% {
+    transform: translate(300px, -300px);
+    opacity: 1;
+  }
+
+  15% {
+    transform: translate(-300px, 300px);
+    opacity: 0;
   }
 }
