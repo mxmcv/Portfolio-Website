@@ -15,6 +15,16 @@ h6 {
   font-family: "Playfair Display", serif;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 p {
   line-height: 175%;
 }
@@ -36,6 +46,39 @@ main > section {
 }
 main > section.active {
   display: block;
+}
+
+.btn-custom-blue {
+  display: inline-block;
+  position: relative;
+  background: #262f48;
+  padding: 10px 52px;
+  text-decoration: none;
+  color: #658df2;
+  border-radius: 8px;
+  transition: all 0.3s;
+  z-index: 1;
+  overflow: hidden;
+}
+.btn-custom-blue:before {
+  z-index: -1;
+  background: #658df2;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+.btn-custom-blue:hover {
+  color: white;
+}
+.btn-custom-blue:hover:before {
+  transform: translate(-50%, -50%) scale(2);
 }
 
 #sidebar {
@@ -160,9 +203,79 @@ main > section.active {
   left: 3px;
 }
 
-#mini-img {
-  height: 40px;
-  width: 40px;
+#home .info {
+  padding-top: 281px;
+}
+#home .info img.mini-img {
+  margin-bottom: 24px;
+  height: 50px;
+  width: 50px;
+}
+#home .info h1 {
+  margin-bottom: 24px;
+}
+#home .info h1 span {
+  color: #b6b7ba;
+}
+#home .info h2 {
+  margin-bottom: 16px;
+  color: #b6b7ba;
+}
+#home .info p {
+  max-width: 400px;
+  margin-bottom: 74px;
+}
+#home .info .socials {
+  margin-top: 191px;
+}
+#home .info .socials ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#home .info .socials ul li {
+  margin-right: 8px;
+}
+#home .info .socials ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 9px 11px;
+  transition: all 0.3s;
+}
+#home .info .socials ul li a:hover {
+  background: #1e1e20;
+  border-radius: 6px;
+}
+#home .info .socials ul li a:hover span,
+#home .info .socials ul li a:hover i {
+  color: white;
+}
+#home .info .socials ul li a i {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #b6b7ba;
+  transition: all 0.3s;
+}
+#home .info .socials ul li a span {
+  color: #808185;
+  transition: all 0.3s;
+}
+#home .image {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#home .image img {
+  height: 853px;
+  width: 546px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+#home .image img:hover {
+  filter: saturate(200%) sepia(1);
 }
 
 @media only screen and (max-width: 768px) {
