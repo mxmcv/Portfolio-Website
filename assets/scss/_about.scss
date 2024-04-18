@@ -2,9 +2,10 @@
   .hero {
     .image {
       img {
+        max-width: 100%;
         border-radius: 8px;
-        width: 400px;
-        height: 700px;
+        width: auto;
+        height: 657px;
         transition: all 0.3s;
 
         &:hover {
@@ -39,7 +40,8 @@
         }
       }
       .buttons {
-        display: flex;
+        display: inline-flex;
+        flex-wrap: wrap;
         a:first-child {
           margin-right: 24px;
         }
