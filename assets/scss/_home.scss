@@ -1,15 +1,17 @@
 #home {
-  background-image: url('../images/bg-shape.png');
+  background-image: var(--bg-shape);
   background-repeat: no-repeat;
   background-position: 40vw -24px;
 
   .info {
     padding-top: 281px;
 
-    img.kiss {
+    img.kiss-home {
       margin-bottom: 24px;
-      width: 148px;
-      height: 148px;
+      height: 152px;
+      width: 152px;
+      border-radius: 1000px;
+      border: 1px solid white;
     }
 
     h1 {
@@ -42,7 +44,8 @@
     }
 
     .socials {
-      margin-top: 191px;
+      transform: translateX(-10px);
+      margin-top: 38px;
 
       ul {
         display: flex;
