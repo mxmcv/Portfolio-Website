@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <div id="sidebar">
+      <div class="toggle-sidebar">
+        <i class="las la-bars"></i>
+      </div>
+      <div class="logo">
+        <img src="assets/images/laptop-logo.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home" class="active inner-link">
+              <i class="las la-home"></i>
+              <span>Home</span>
+            </a>
+            <span>Home</span>
+          </li>
+          <li>
+            <a href="#about_me" class="inner-link">
+              <i class="las la-address-card"></i>
+              <span>About Me</span>
+            </a>
+            <span>About Me</span>
+          </li>
+          <li>
+            <a href="#my_resume" class="inner-link">
+              <i class="las la-file"></i>
+              <span>My Resume</span>
+            </a>
+            <span>My Resume</span>
+          </li>
+          <li>
+            <a href="#my_work" class="inner-link">
+              <i class="las la-briefcase"></i>
+              <span>My Work</span>
+            </a>
+            <span>My Work</span>
+          </li>
+          <!-- IF I WANT TO ADD TESTIMONIALS -->
+          <!-- <li>
+            <a href="#testimonial" class="inner-link">
+              <i class="las la-comment-alt"></i>
+              <span>Testimonial</span>
+            </a>
+            <span>Testimonial</span>
+          </li> -->
+          <li>
+            <a href="#contact_me" class="inner-link">
+              <i class="las la-phone"></i>
+              <span>Contact Me</span>
+            </a>
+            <span>Contact Me</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="toggle-mode">
+        <div class="outer" onclick="toggleMode()">
+          <div class="inner"></div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section id="home" class="active">
+        <div class="meteor-shower"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 info">
+              <img
+                class="kiss-home"
+                src="assets/images/kiss-home.png"
+                alt="kiss home"
+              />
+              <h1><span>I’m</span> Michael,</h1>
+              <div class="field">
+                <h2></h2>
+              </div>
+              <p>
+                I design and code beautifully simple things, <br />and I love
+                what I do.
+              </p>
+              <a
+                class="btn-custom-blue"
+                href="assets/files/no-updated-resume.pdf"
+                download
+                >Download CV</a
+              >
+              <div class="socials">
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/michael-mcvicar-395136291/"
+                    >
+                      <i class="lab la-linkedin-in"></i>
+                      <span>LinkedIn</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mxmcv">
+                      <i class="lab la-github"></i>
+                      <span>Github</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- IF I WANT TO ADD IMAGE OF ME TO HOME -->
+            <!-- <div class="col-lg-6 image">
+                        <img src="" alt="person home">
+                    </div> -->
+          </div>
+        </div>
+      </section>
+      <section id="about_me">
+        <div class="container">
+          <div class="row hero">
+            <div class="col-xxl-6 col-lg-4 image">
+              <img src="assets/images/tree-about.jpg" alt="tree about" />
+            </div>
+            <div class="col-xxl-6 col-lg-8 info">
+              <header class="has-bg">
+                <img src="assets/images/h1-bg.png" alt="h1 bg" />
+                <img src="assets/images/h1-bg-light.png" alt="h1 bg" />
+                <h1>About Me</h1>
+              </header>
+              <h2>Front-End web developer</h2>
+              <p>
+                Empowering partners of all sizes with custom web experiences
+                that are memorable and drive success. With a passion for design
+                and development, I take projects from ideation to launch,
+                ensuring a seamless journey that leaves a lasting impact in the
+                digital landscape.
+              </p>
+              <div class="items">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6 ps-0">
+                      <div class="item">
+                        <span class="title">Name:</span>
+                        <span class="value">Michael McVicar</span>
+                      </div>
+                      <div class="item">
+                        <span class="title">Age:</span>
+                        <span class="value">19</span>
+                      </div>
+                      <div class="item">
+                        <span class="title">Location:</span>
+                        <span class="value">Toronto</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 ps-0">
+                      <div class="item">
+                        <span class="title">School:</span>
+                        <span class="value">University of Waterloo</span>
+                      </div>
+                      <div class="item">
+                        <span class="title">Program:</span>
+                        <span class="value">Systems Design Engineering</span>
+                      </div>
+                      <div class="item">
+                        <span class="title">E-mail:</span>
+                        <span class="value">m2mcvica@uwaterloo.ca</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons">
+                <a
+                  href="assets/files/resume-michael-mcvicar.pdf"
+                  class="btn-custom-blue"
+                  download
+                  >Download CV</a
+                >
+                <a href="#contact_me" class="btn-custom-dark inner-link"
+                  >Message me</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row languages-skills">
+            <div class="col-lg-6 languages-key-skills">
+              <div class="languages">
+                <header class="custom">
+                  <h2>Languages</h2>
+                </header>
+                <ul class="items">
+                  <li class="item">
+                    <div class="info">
+                      <h3>English</h3>
+                      <span class="level">Native</span>
+                    </div>
+                    <div class="rate">
+                      <span class="fill"></span>
+                      <span class="fill"></span>
+                      <span class="fill"></span>
+                      <span class="fill"></span>
+                      <span class="fill"></span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="info">
+                      <h3>Spanish</h3>
+                      <span class="level">Conversational</span>
+                    </div>
+                    <div class="rate">
+                      <span class="fill"></span>
+                      <span class="fill"></span>
+                      <span class="fill"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="key-skills">
+                <header class="custom">
+                  <h2>Key Skills</h2>
+                </header>
+                <div class="row">
+                  <div class="column-left">
+                    <ul class="items">
+                      <li class="item">
+                        <h3>Human-Centered Design</h3>
+                      </li>
+                      <li class="item">
+                        <h3>Storytelling</h3>
+                      </li>
+                      <li class="item">
+                        <h3>Adaptability</h3>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="column-right">
+                    <ul class="items">
+                      <li class="item">
+                        <h3>Client Advocacy</h3>
+                      </li>
+                      <li class="item">
+                        <h3>Active Listening</h3>
+                      </li>
+                      <li class="item">
+                        <h3>Curiosity</h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 web-skills mt-5 mt-lg-0">
+              <header class="custom">
+                <h2>My Web Skills</h2>
+              </header>
+              <div class="container">
+                <div class="items row">
+                  <div class="col-xl-4 col-sm-6 px-2">
+                    <div class="item">
+                      <img
+                        src="assets/images/web skills/html5.png"
+                        alt="html5"
+                      />
+                      <h3>HTML 5</h3>
+                      <!-- <span class="year">over 1 year</span> -->
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6 px-2">
+                    <div class="item">
+                      <img src="assets/images/web skills/css3.png" alt="css3" />
+                      <h3>CSS 3</h3>
+                      <!-- <span class="year">over 1 year</span> -->
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6 px-2">
+                    <div class="item">
+                      <img
+                        src="assets/images/web skills/bootstrap.png"
+                        alt="bootstrap"
+                      />
+                      <h3>Bootstrap</h3>
+                      <!-- <span class="year">4 months</span> -->
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6 px-2">
+                    <div class="item">
+                      <img
+                        src="assets/images/web skills/figma.png"
+                        alt="figma"
+                      />
+                      <h3>Figma</h3>
+                      <!-- <span class="year">2 years</span> -->
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6 px-2">
+                    <div class="item">
+                      <img
+                        src="assets/images/web skills/js.png"
+                        alt="JavaScript"
+                      />
+                      <h3>JavaScript</h3>
+                      <!-- <span class="year">4 months</span> -->
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6 px-2">
+                    <div class="item">
+                      <img
+                        src="assets/images/web skills/react.png"
+                        alt="React"
+                      />
+                      <h3>React</h3>
+                      <!-- <span class="year">2 months</span> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- IF I WANT TO ADD CERTIFICATES -->
+          <!-- <div class="certificates">
+            <header class="custom">
+              <h2>My Certifications</h2>
+            </header>
+            <div class="items row justify-content-center">
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item">
+                <img
+                  src="assets/images/certifications/cert-figma.png"
+                  alt="certification"
+                />
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item">
+                <img
+                  src="assets/images/certifications/cert-matlab.png"
+                  alt="certification"
+                />
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item">
+                <img
+                  src="assets/images/certifications/cert-python.png"
+                  alt="certification"
+                />
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <section id="my_resume">
+        <div class="text-center">
+          <header class="has-bg">
+            <img src="assets/images/h1-bg.png" alt="h1 bg" />
+            <img src="assets/images/h1-bg-light.png" alt="h1 bg" />
+            <h1>My Resume</h1>
+          </header>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 experience">
+              <header class="custom">
+                <h2>Experience</h2>
+              </header>
+              <div class="items">
+                <div class="item last">
+                  <div class="icon">
+                    <i class="las la-briefcase"></i>
+                  </div>
+                  <div class="box">
+                    <span class="year">2024</span>
+                    <h2 class="title">User Experience Designer</h2>
+                    <p>TD Canada Trust</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="icon">
+                    <i class="las la-briefcase"></i>
+                  </div>
+                  <div class="box">
+                    <span class="year">2023</span>
+                    <h2 class="title">Manager</h2>
+                    <p>Rum Runners Rum Cake Factory</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 education">
+              <header class="custom">
+                <h2>Education</h2>
+              </header>
+              <div class="items">
+                <div class="item last">
+                  <div class="icon">
+                    <i class="las la-university"></i>
+                  </div>
+                  <div class="box">
+                    <span class="year">2023-2028</span>
+                    <h2 class="title">Systems Design Engineering</h2>
+                    <p>University of Waterloo</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="icon">
+                    <i class="las la-university"></i>
+                  </div>
+                  <div class="box">
+                    <span class="year">2020-2023</span>
+                    <h2 class="title">High School</h2>
+                    <p>Dartmouth High School</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="my_work">
+        <div class="text-center">
+          <header class="has-bg">
+            <img src="assets/images/h1-bg.png" alt="h1 bg" />
+            <img src="assets/images/h1-bg-light.png" alt="h1 bg" />
+            <h1>My Work</h1>
+          </header>
+        </div>
+        <div class="filters">
+          <button data-group="all" class="active">
+            <h4>All</h4>
+          </button>
+          <button data-group="Web Development">
+            <h4>Web Development</h4>
+          </button>
+          <button data-group="UX Design">
+            <h4>UX Design</h4>
+          </button>
+        </div>
+        <div class="container">
+          <div class="row work-items">
+            <div
+              class="col-sm-6 col-lg-4 item"
+              data-groups='["Web Development"]'
+            >
+              <div
+                class="wrap"
+                data-image="assets/images/works/swipe.png"
+                data-title="Swipe"
+                data-description="Swipe is a homepage web design inspired by the leading digital payments company, Stripe. Using HTML, CSS, and JavaScript, I created this site to challenge my design and development skills, focusing on emulating and adapting the clean, effective layout characteristic of top-tier tech companies. This project served as a practical exercise to refine my capabilities in producing industry-standard, aesthetic designs."
+                data-client="Personal Project"
+                data-completed="March 25 2024"
+                data-skills="HTML, CSS, Javascript"
+                data-project-link="https://github.com/mxmcv/Swipe"
+              >
+                <img src="assets/images/works/swipe.png" alt="work" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["UX Design"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/diet-me.png"
+                data-title="DietMe"
+                data-description="DietMe is a mobile app tailored for individuals with dietary restrictions. It enables users to scan food items with their smartphone, instantly assessing safety and suggesting recipes. Developed for a product design competition at Western University, the app ranked third among over 50 entries. The design process included a comprehensive pain point analysis and competitive research, ensuring that DietMe effectively simplifies dietary management for its users."
+                data-client="2024 Western Product Design Competition"
+                data-completed="March 10 2024"
+                data-skills="Figma"
+                data-project-link="https://www.canva.com/design/DAGDBaRDm74/kBjbVTjcdy8Pf41l4doS7A/view?utm_content=DAGDBaRDm74&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+              >
+                <img src="assets/images/works/diet-me.png" alt="work" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["UX Design"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/design-system.png"
+                data-title="Low-fidelity Design System"
+                data-description="I developed a low-fidelity design system in Figma that streamlined the design process for mobile and web projects. This system included sketched versions of standard digital design components, facilitating the creation of low-fidelity models. This initiative enhanced workflow efficiency and set a foundation for consistent, high-quality digital development."
+                data-client="Leading bank in North America"
+                data-completed="April 5 2024"
+                data-skills="Figma"
+                data-project-link="https://www.figma.com/file/I1fADU0pSVwMq1X1Kw2RJQ/Design-System?type=design&node-id=0%3A1&mode=design&t=y2IwuRvABrOjkdCZ-1"
+              >
+                <img src="assets/images/works/design-system.png" alt="work" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact_me">
+        <div class="text-center">
+          <header class="has-bg">
+            <img src="assets/images/h1-bg.png" alt="h1 bg" />
+            <img src="assets/images/h1-bg-light.png" alt="h1 bg" />
+            <h1>Contact Me</h1>
+          </header>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 form">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="9c0b9362-f0cd-43da-bac4-f7e0f0d125b4"
+                />
+                <div class="form-item">
+                  <label>Name</label>
+                  <input type="text" name="name" required />
+                </div>
+                <div class="form-item">
+                  <label>Email</label>
+                  <input type="email" name="email" required />
+                </div>
+                <div class="form-item">
+                  <label>Message</label>
+                  <textarea name="message" required></textarea>
+                </div>
+                <div class="h-captcha" data-captcha="true"></div>
+                <div class="text-end">
+                  <button type="submit" class="btn-custom-dark">
+                    Send message
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6 info">
+              <div class="item">
+                <i class="las la-envelope"></i>
+                <div class="text">
+                  <span class="title">Email:</span>
+                  <a href="mailto:m2mcvica@uwaterloo.ca"
+                    >m2mcvica@uwaterloo.ca</a
+                  >
+                </div>
+              </div>
+              <div class="item">
+                <i class="las la-map-marker-alt"></i>
+                <div class="text">
+                  <span class="title">Location:</span>
+                  <p>Toronto, Ontario, Canada</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal fade" id="workModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="modal-close-button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="las la-times"></i>
+            </button>
+            <img src="" alt="work" />
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-7 left">
+                  <h2 class="title"></h2>
+                  <p class="description"></p>
+                </div>
+                <div class="col-lg-5 right">
+                  <div class="client mb-3">
+                    <i class="las la-user-alt"></i>
+                    <span class="title">Client:</span>
+                    <span class="value"></span>
+                  </div>
+                  <div class="completed mb-3">
+                    <i class="lar la-calendar-check"></i>
+                    <span class="title">Completed:</span>
+                    <span class="value"></span>
+                  </div>
+                  <div class="skills">
+                    <i class="las la-flask"></i>
+                    <span class="title">Skills:</span>
+                    <span class="value"></span>
+                  </div>
+                  <div class="project-link">
+                    <i class="las la-link"></i>
+                    <a href="">Project link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/6.0.0/shuffle.min.js"
+      integrity="sha512-fN+YeX/572qBnWu5Axj90DDyKjSNUfvR+8OaFkz27xnr+QE50vZHefJ+bplRrM284a8cJgMLxEipmKshf8vrug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
