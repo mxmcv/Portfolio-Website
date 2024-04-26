@@ -48,6 +48,16 @@
     right: 10px;
     top: 10px;
   }
+  #about_me {
+    .hero {
+      .info {
+        header {
+          margin-top: 28px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
 
   #contact_me {
     .container {
@@ -67,6 +77,9 @@
 }
 
 @media (max-width: 767px) {
+  .circle {
+    display: none;
+  }
   #sidebar {
     background: darken($secondary, 30%);
     padding-right: 60px;
@@ -137,6 +150,14 @@
   }
 
   #about_me {
+    .hero {
+      .info {
+        header {
+          margin-top: 28px;
+        }
+      }
+    }
+
     .hero .info .buttons {
       flex-direction: column;
 
