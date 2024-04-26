@@ -13,10 +13,10 @@
 
   #my_resume {
     .experience {
-      margin-top: 100px;
+      margin-top: 32px;
     }
     .education {
-      margin-top: 80px;
+      margin-top: 74px;
     }
   }
 
@@ -98,7 +98,8 @@
     }
 
     .toggle-mode {
-      transform: translateY(-138px);
+      display: flex;
+      align-items: flex-start;
     }
 
     .logo {
@@ -156,7 +157,7 @@
     .hero {
       .info {
         header {
-          margin-top: 28px;
+          margin-top: 34px;
         }
       }
     }
@@ -245,6 +246,14 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #home {
+    br {
+      display: none;
     }
   }
 }
