@@ -14,12 +14,26 @@ navLinks.forEach((item) => {
   });
 });
 
+// Add an event listener to the toggle button to open/close the sidebar
 document
   .querySelector('#sidebar .toggle-sidebar')
-  .addEventListener('click', function () {
+  .addEventListener('click', function (event) {
     document.querySelector('#sidebar').classList.toggle('open');
+    event.stopPropagation(); // Prevents the click from propagating to the document
   });
 
+// Add an event listener to the document to close the sidebar when clicking outside
+document.addEventListener('click', function (event) {
+  const sidebar = document.querySelector('#sidebar');
+  if (sidebar.classList.contains('open') && !sidebar.contains(event.target)) {
+    sidebar.classList.remove('open');
+  }
+});
+
+// Prevent clicks within the sidebar from closing it
+document.querySelector('#sidebar').addEventListener('click', function (event) {
+  event.stopPropagation();
+});
 var options = {
   strings: [
     'Front-End web developer',

@@ -15,6 +15,9 @@
     .experience {
       margin-top: 100px;
     }
+    .education {
+      margin-top: 80px;
+    }
   }
 
   #contact_me {
@@ -94,6 +97,10 @@
       display: flex;
     }
 
+    .toggle-mode {
+      transform: translateY(-138px);
+    }
+
     .logo {
       text-align: left;
     }
@@ -137,14 +144,10 @@
     background-image: unset;
 
     .info {
-      padding-top: 80px;
+      padding-top: 100px;
 
       .socials {
-        margin-top: 70px;
-
-        ul {
-          justify-content: space-between;
-        }
+        margin-top: 36px;
       }
     }
   }
@@ -156,6 +159,9 @@
           margin-top: 28px;
         }
       }
+    }
+    .languages-skills {
+      margin-top: 66px;
     }
 
     .hero .info .buttons {
