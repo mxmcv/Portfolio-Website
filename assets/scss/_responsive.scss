@@ -142,6 +142,8 @@
   }
 
   #home {
+    overflow: hidden;
+    height: 100vh !important;
     background-image: unset;
     .filler-div {
       width: 100%;
