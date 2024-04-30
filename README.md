@@ -9,7 +9,7 @@ Personal Project
 
 ### Date Completed:
 
-Active project
+Active
 
 ### Skills:
 
