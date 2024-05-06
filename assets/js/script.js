@@ -35,11 +35,7 @@ document.querySelector('#sidebar').addEventListener('click', function (event) {
   event.stopPropagation();
 });
 var options = {
-  strings: [
-    'Front-End web developer',
-    'User Experience Designer',
-    'Web designer',
-  ],
+  strings: ['Front-End Web Developer', 'User Experience Designer'],
   loop: true,
   typeSpeed: 70,
   backSpeed: 10,
